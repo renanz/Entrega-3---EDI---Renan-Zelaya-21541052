@@ -125,7 +125,7 @@ void fileExplorer::seed()
 {
     int rand;
     QString name;
-    for (int x=0; x<23; x++ )
+    for (int x=0; x<40; x++ )
     {
         rand = (qrand() % 4) % 2;
         (rand == 0 ? name="Folder" : name="Archivo");

@@ -87,6 +87,7 @@ void MainWindow::crearBotones(QString nombre,int tipo,int xPos, int yPos)
     boton->setAccessibleName(QString::number(tipo));
     boton->setObjectName(nombre);
     connect(boton,SIGNAL (pressed()),this,SLOT(handleButton()));
+    ui->gridLayout->addWidget(boton,yPos,xPos);
 
 }
 
